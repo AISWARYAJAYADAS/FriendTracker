@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activties.LocationDirectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Find me"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:layout_weight="3"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="7"
+                android:gravity="end"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image_message"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/ic_menu_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/googleMap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prograssBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:visibility="gone" />
+
+    <com.location.tracking.helper.SlidingPanel
+        android:id="@+id/popup_window_dropdown"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="3dp"
+        android:visibility="gone"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="3dp">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Profile"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#73000000"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Message"
+            android:paddingLeft="15dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#73000000"
+            android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </com.location.tracking.helper.SlidingPanel>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "682183491387",
+    "firebase_url": "https://friendtracking-199003.firebaseio.com",
+    "project_id": "friendtracking-199003",
+    "storage_bucket": "friendtracking-199003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682183491387:android:96a0fc2d39862601",
+        "android_client_info": {
+          "package_name": "com.location.tracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682183491387-qa2bfp77pq9rs8cv4dqltgh4ntpnq3uc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.location.tracking",
+            "certificate_hash": "1eea82ed7f7a5a99245214bc11ceb0185918820f"
+          }
+        },
+        {
+          "client_id": "682183491387-5up8kerhn22v04uhbmmca509rusojgim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.location.tracking",
+            "certificate_hash": "14685aa84e160db816f5fc46848411ec21f7a4c9"
+          }
+        },
+        {
+          "client_id": "682183491387-0qmp49oti3ppgev5fk5ruslut22hbmrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB41iY5wH502yRNAnRCeP2Oh1DGB4b6t_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682183491387-0qmp49oti3ppgev5fk5ruslut22hbmrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

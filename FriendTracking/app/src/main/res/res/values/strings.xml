@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_map">Map</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone_number">Enter your number</string>
+    <string name="btn_register">Register</string>
+    <string name="title_register">Registration</string>
+    <string name="title_messages">Messages</string>
+</resources>

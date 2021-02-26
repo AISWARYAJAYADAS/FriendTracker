@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Friend Tracking</string>
+    <string name="title_activity_map">Map</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone_number">Enter your number</string>
+    <string name="btn_register">Register</string>
+    <string name="title_register">Registration</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="title_activity_test_map">TestMapActivity</string>
+    <string name="title_chat">Chat</string>
+</resources>

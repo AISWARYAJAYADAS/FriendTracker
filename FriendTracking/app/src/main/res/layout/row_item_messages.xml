@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ralativeLayout"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageviewChat"
+        android:layout_width="60dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ovel_view"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageviewChat"
+        android:layout_toStartOf="@+id/textviewView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/date"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/textviewView"
+        android:layout_width="wrap_content"
+        android:text="offline"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_toStartOf="@+id/online"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:background="@drawable/avatar"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_offline"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/online"
+        android:layout_width="16dp"
+        android:visibility="gone"
+        android:layout_height="16dp" />
+    <TextView
+        android:layout_toEndOf="@+id/imageviewChat"
+        android:layout_below="@+id/imageviewChat"
+        android:layout_width="match_parent"
+        android:background="@color/message_view"
+        android:layout_marginBottom="3dp"
+        android:layout_height="1dp" />
+</RelativeLayout>
